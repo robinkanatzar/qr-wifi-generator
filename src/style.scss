@@ -1,0 +1,39 @@
+$roboto-font-path: "~materialize-sass/fonts/roboto/";
+@import "~materialize-sass/sass/materialize";
+
+// https://stackoverflow.com/a/6202729/1561140
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details summary {
+  user-select: none;
+  outline: none;
+}
+
+body {
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.output-form {
+  outline: none;
+  user-select: none;
+  font-family: monospace;
+  word-wrap: break-word;
+}
+
+#text_output {
+  user-select: text;
+}
+
+.revealpass {
+  margin-top: 2em;
+}
+
+.waves-effect.waves-black {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+   background-color: rgba(0, 0, 0, 1);
+}
